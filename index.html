@@ -8,19 +8,29 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <span id="corr"></span>
     <div class="container">
-      
       <div class="heading">
         <h1>Web Dev Questions</h1>
+        <button id="submit">Submit</button>
         <p>Do you know Js?</p>
       </div>
-      
-      <div id="questions-container">
 
+      <div id="questions-container">
+        <!-- <div id="options">
+          <input type="radio" name="anwser" id="checkInp" />
+          <label>${choice}</label><br />
+        </div> -->
       </div>
     </div>
-   
 
+    <!-- <div class="container-sub"> -->
+      <div class="sub">
+        <h3>You got <span id="correct">0</span > of <span id="questLength"></span> questions correct</h3>
+        <button id="cancel">Cancel</button>
+        <button id="restart">Restart</button>
+      </div>
+    <!-- </div> -->
 
     <script src="./script.js"></script>
   </body>

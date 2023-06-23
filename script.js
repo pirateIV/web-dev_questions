@@ -1,7 +1,10 @@
+// Variables
+
 const popUpMessage = document.querySelector(".sub");
 let questLength = document.getElementById("questLength");
 let corrQuestions = document.getElementById("correct");
 
+// List of question array
 const questions = [
   {
     question: " Which of the following is not a CSS box model property?",
@@ -97,6 +100,7 @@ const questionContainer = document.getElementById("questions-container");
 const choices = document.querySelectorAll(".choice");
 const choicesTab = document.querySelector("#choicesTab");
 
+// update question function
 function updateQuestion() {
   questions.forEach((question, index) => {
     questionContainer.innerHTML += `
@@ -142,6 +146,7 @@ const restart = document.querySelector("#restart");
 submit.addEventListener("click", submitQue);
 restart.addEventListener("click", restartQue);
 
+// animation to see popUpMessage...
 function submitQue() {
   popUpMessage.style.transform = "translate(-50%, -50%) scale(1)";
 }
@@ -151,6 +156,7 @@ function restartQue() {
 
 updateQuestion();
 
+// animation to exit popUpMessage...
 cancel.addEventListener("click", () => {
   popUpMessage.style.transform = "translate(-50%, -50%) scale(0)";
 });
